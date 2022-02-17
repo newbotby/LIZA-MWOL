@@ -87,8 +87,17 @@ if(pattern.test(message.message)){
         if(Config.BGMFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
+        if (!!message.mention && message.mention[0] == '918547062392@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/soul.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
+        }
+        if (!!message.mention && message.mention[0] == '918714183251@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/Bgm.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
+        }
+        if (!!message.mention && message.mention[0] == '919961857267@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/bgm.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
+        }
+        if (!!message.mention && message.mention[0] == '917561815983@s.whatsapp.net') {
+await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/Nee.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 5, isForwarded: true }, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.MENTION) {
 await message.client.sendMessage(message.jid, fs.readFileSync('./media/files/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
